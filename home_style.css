@@ -1,0 +1,274 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    padding: 0 250px;
+}
+
+#body {
+    margin-bottom: 118px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    color: #6622CC;
+    font-size: 30px;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+.navbar_pages {
+    color: #212427;
+    font-size: 16px;
+    font-weight: 500;
+    word-wrap: break-word;
+    text-transform: uppercase
+}
+
+.navbar_actions {
+    color: #6622CC;
+}
+
+.navbar_actions span {
+    margin: 0px 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin-right: 10px;
+}
+
+li a {
+    display: block;
+    color: #212427;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+.active {
+    color: #6622CC;
+}
+
+h2 {
+    color: #212427;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+h3 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+
+.login_form {
+    text-align: center;
+}
+
+form {
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 23px;
+    color: #8A94A0;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #8A94A0;
+    font-size: 16px;
+}
+
+button {
+    padding: 6px 25px;
+    justify-content: center;
+    border: 0;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    background: #8EDCE6;
+    color: #6622CC;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 40px;
+    align-self: center;
+}
+
+button:hover {
+    background: #7fd3df;
+}
+
+.text_link {
+    display: block;
+    margin-top: 10px;
+    text-align: right;
+    color: #6622CC;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    align-self: right;
+}
+
+.text_link:hover {
+    text-decoration: underline;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-bottom: 50px;
+}
+
+footer {
+    width: 100%;
+    background-color: #6622CC;
+    margin-top: auto;
+    color: #FDFDFD;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+
+#footer p {
+    color: #FDFDFD;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#footer .links:hover {
+    text-decoration: underline;
+}
+
+#footer .logo {
+    color: #E1B4F4;
+    font-size: 24px;
+}
+
+.slideshow {
+    padding-left: 250px;
+}
+
+.slideshow-container {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+.slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slide_img {
+    width: 50%;
+
+}
+
+.slide_text {
+    flex: 1;
+    padding: 20px;
+}
+
+.slide_title {
+    color: #212427;
+    text-align: left;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.slide_subtitle {
+    color: #212427;
+    text-align: left;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.slider-dots {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #6622cc85;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+#active-dot,
+.dot:hover {
+    background-color: #6622CC;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
