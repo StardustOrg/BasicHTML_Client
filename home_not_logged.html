@@ -78,8 +78,87 @@
     <div class="container" id="body">
         <div class="bundles" id="artists">
             <h2>artists</h2>
-            <div class="carrousel">
-                
+            <div class="carrousel-container">
+                <span class="material-symbols-rounded" onclick="moveCarousel(-1)">
+                    arrow_back_ios_new
+                </span>
+                <div class="carrousel">
+                    <div class="artist-card">
+                        <div class="artist-image">
+                            <img src="./assets/newjeans.png" />
+                            <div class="overlay"></div>
+                            <div class="image-caption">
+                                NEWJEANS
+                            </div>
+                        </div>
+                    </div>
+                    <div class="artist-card">
+                        <div class="artist-image">
+                            <img src="./assets/newjeans.png" />
+                            <div class="overlay"></div>
+                            <div class="image-caption">
+                                red velvet
+                            </div>
+                        </div>
+                    </div>
+                    <div class="artist-card">
+                        <div class="artist-image">
+                            <img src="./assets/newjeans.png" />
+                            <div class="overlay"></div>
+                            <div class="image-caption">
+                                NEWJEANS
+                            </div>
+                        </div>
+                    </div>
+                    <div class="artist-card">
+                        <div class="artist-image">
+                            <img src="./assets/newjeans.png" />
+                            <div class="overlay"></div>
+                            <div class="image-caption">
+                                NEWJEANS
+                            </div>
+                        </div>
+                    </div>
+                    <div class="artist-card">
+                        <div class="artist-image">
+                            <img src="./assets/newjeans.png" />
+                            <div class="overlay"></div>
+                            <div class="image-caption">
+                                NEWJEANS
+                            </div>
+                        </div>
+                    </div>
+                    <div class="artist-card">
+                        <div class="artist-image">
+                            <img src="./assets/newjeans.png" />
+                            <div class="overlay"></div>
+                            <div class="image-caption">
+                                NEWJEANS
+                            </div>
+                        </div>
+                    </div>
+                    <div class="artist-card">
+                        <div class="artist-image">
+                            <img src="./assets/newjeans.png" />
+                            <div class="overlay"></div>
+                            <div class="image-caption">
+                                NEWJEANS
+                            </div>
+                        </div>
+                    </div>
+                    <div class="artist-card">
+                        <div class="artist-image">
+                            <img src="./assets/newjeans.png" />
+                            <div class="overlay"></div>
+                            <div class="image-caption">
+                                NEWJEANS
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="material-symbols-rounded" onclick="moveCarousel(1)">
+                    arrow_forward_ios
+                </span>
             </div>
         </div>
         <div class="bundles" id="last-units">
@@ -88,9 +167,9 @@
                 <div class="card">
                     <img src="img_avatar.png" alt="Avatar">
                     <div>
-                      <h4>John Doe</h4>
+                        <h4>John Doe</h4>
                     </div>
-                  </div>
+                </div>
             </div>
         </div>
         <div class="bundles" id="new-additions">
@@ -99,9 +178,9 @@
                 <div class="card">
                     <img src="img_avatar.png" alt="Avatar">
                     <div>
-                      <h4>John Doe</h4>
+                        <h4>John Doe</h4>
                     </div>
-                  </div>
+                </div>
             </div>
         </div>
     </div>
@@ -160,6 +239,55 @@
         }
 
         autoSlide(); // Start automatic slideshow
+
+        const carrousel = document.querySelector('.carrousel');
+        const artistCards = document.querySelectorAll('.artist-card');
+        const prevButton = document.querySelector('.arrow-back-ios-new');
+        const nextButton = document.querySelector('.arrow-forward-ios');
+
+        const cardsPerPage = 5;
+        let currentPage = 0;
+
+        function updateCarousel() {
+            const startIndex = currentPage * cardsPerPage;
+            const endIndex = startIndex + cardsPerPage;
+
+            artistCards.forEach((card, index) => {
+                if (index >= startIndex && index < endIndex) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        function moveCarousel(direction) {
+            currentPage += direction;
+
+            if (currentPage < 0) {
+                currentPage = 0;
+            }
+
+            const maxPage = Math.ceil(artistCards.length / cardsPerPage) - 1;
+
+            if (currentPage > maxPage) {
+                currentPage = maxPage;
+            }
+
+            updateCarousel();
+        }
+
+        prevButton.addEventListener('click', () => {
+            moveCarousel(-1);
+        });
+
+        nextButton.addEventListener('click', () => {
+            moveCarousel(1);
+        });
+
+        // Initial update
+        updateCarousel();
+
     </script>
 </body>
 
