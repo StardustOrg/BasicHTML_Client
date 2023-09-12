@@ -80,6 +80,13 @@ h2 {
     line-height: normal;
 }
 
+.bundles h2 {
+    text-align: start;
+    text-transform: uppercase;
+    margin-top: 64px;
+    margin-bottom: 30px;
+}
+
 h3 {
     font-size: 24px;
     font-style: normal;
