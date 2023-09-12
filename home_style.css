@@ -206,6 +206,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .slide_img {
@@ -226,6 +227,7 @@ footer {
     font-weight: 800;
     line-height: normal;
     margin-bottom: 20px;
+    margin-right: 50px;
 }
 
 .slide_subtitle {

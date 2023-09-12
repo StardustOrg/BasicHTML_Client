@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./assets/stardust.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" />
     <link rel="stylesheet" href="home_style.css">
@@ -11,7 +12,7 @@
 </head>
 
 <body>
-    <div class="container" id="body">
+    <div class="container">
         <div class="navbar">
             <div class="logo">StardustCard</div>
             <ul class="navbar_pages">
@@ -37,7 +38,7 @@
         <div class="slideshow-container">
             <div class="slide fade">
                 <div class="slide_text">
-                    <div class="slide_title">Find your next photocard here!</div>
+                    <div class="slide_title">Find your next photocard here</div>
                     <div class="slide_subtitle">Rare photocards available only on StardustCard.</div>
                     <div class="slider-dots">
                         <span class="dot" id="active-dot" onclick="currentSlide(1)"></span>
@@ -49,7 +50,7 @@
             </div>
             <div class="slide fade">
                 <div class="slide_text">
-                    <div class="slide_title">New additions every week.</div>
+                    <div class="slide_title">New additions every week</div>
                     <div class="slide_subtitle">All new releases available.</div>
                     <div class="slider-dots">
                         <span class="dot" onclick="currentSlide(1)"></span>
@@ -61,7 +62,7 @@
             </div>
             <div class="slide fade">
                 <div class="slide_text">
-                    <div class="slide_title">All your favorite idols.</div>
+                    <div class="slide_title">All your favorite idols</div>
                     <div class="slide_subtitle">The widest range of artists!</div>
                     <div class="slider-dots">
                         <span class="dot" onclick="currentSlide(1)"></span>
@@ -115,9 +116,20 @@
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
             }
-            slides[slideIndex - 1].style.display = "block";
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "flex";
             dots[slideIndex - 1].className += " active";
         }
+
+        // Automatic slideshow
+        function autoSlide() {
+            showSlides(slideIndex += 1);
+            setTimeout(autoSlide, 5000);
+        }
+
+        autoSlide(); // Start automatic slideshow
     </script>
 </body>
 
