@@ -223,7 +223,7 @@ footer {
 
 .slide_text {
     flex: 1;
-    padding: 20px;
+    padding-right: 150px;
 }
 
 .slide_title {
@@ -283,6 +283,7 @@ footer {
 }
 
 .carrousel-container {
+    padding: 10px 0px;
     justify-content: space-between;
     display: flex;
     flex-direction: row;
@@ -298,6 +299,7 @@ footer {
 }
 
 .artist-card {
+    box-shadow: 0px 0px 10px 0px rgba(77, 77, 77, 0.25);
     width: 155px;
     height: 155px;
     position: relative;
