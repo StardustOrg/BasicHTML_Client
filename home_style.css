@@ -6,6 +6,16 @@ body {
     flex-direction: column;
 }
 
+.material-symbols-rounded {
+    color: #6622CC;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.material-symbols-rounded:hover {
+    color: #7fd3df;
+}
+
 .container {
     padding: 0 250px;
 }
@@ -34,14 +44,6 @@ body {
     font-weight: 500;
     word-wrap: break-word;
     text-transform: uppercase
-}
-
-.navbar_actions {
-    color: #6622CC;
-}
-
-.navbar_actions span {
-    margin: 0px 10px;
 }
 
 ul {
@@ -361,11 +363,4 @@ footer {
 
 .carrousel-container span {
     font-size: 30px;
-    color: #6622CC;
-    cursor: pointer;
-    margin: 0 10px;
-}
-
-.carrousel-container span:hover {
-    color: #7fd3df;
 }
