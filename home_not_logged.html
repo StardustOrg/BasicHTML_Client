@@ -16,8 +16,8 @@
         <div class="navbar">
             <div class="logo">StardustCard</div>
             <ul class="navbar_pages">
-                <li><a class="active">Home</a></li>
-                <li><a>Artists</a></li>
+                <li><a class="active" href="home_not_logged.html">Home</a></li>
+                <li><a href="artists_page.html">Artists</a></li>
                 <li><a>Trending</a></li>
                 <li><a>New additions</a></li>
             </ul>
@@ -202,48 +202,38 @@
             <div class="photocards">
                 <div class="card">
                     <div id="photo">
-                        <img src="img_avatar.png" alt="Avatar">
+                        <img src="./assets/photocard/bts_proof_rm.png" alt="Avatar">
                     </div>
-                    <div class="card-info">
-                        Photocard Name dasdadas
-                        <div class="card-detail">5 units left</div>
-                    </div>
+                    <div class="card-title">BTS Proof RM Photocard</div>
+                    <div class="card-detail">5 units left</div>
                 </div>
                 <div class="card">
                     <div id="photo">
-                        <img src="img_avatar.png" alt="Avatar">
+                        <img src="./assets/photocard/hannie_bunnie_tokkis.png" alt="Avatar">
                     </div>
-                    <div class="card-info">
-                        Photocard Name dasdadas
-                        <div class="card-detail">5 units left</div>
-                    </div>
+                    <div class="card-title">Official New Jeans Lightstick Photocards / Bunnies Tokkis</div>
+                    <div class="card-detail">2 units left</div>
                 </div>
                 <div class="card">
                     <div id="photo">
-                        <img src="img_avatar.png" alt="Avatar">
+                        <img src="./assets/photocard/ive_love_dive_wooyoung.png" alt="Avatar">
                     </div>
-                    <div class="card-info">
-                        Photocard Name dasdadas
-                        <div class="card-detail">5 units left</div>
-                    </div>
+                    <div class="card-title">IVE Love Dive Wooyoung</div>
+                    <div class="card-detail">1 units left</div>
                 </div>
                 <div class="card">
                     <div id="photo">
-                        <img src="img_avatar.png" alt="Avatar">
+                        <img src="./assets/photocard/bp_ice_cream_jennie.png" alt="Avatar">
                     </div>
-                    <div class="card-info">
-                        Photocard Name dasdadas
-                        <div class="card-detail">5 units left</div>
-                    </div>
+                    <div class="card-title">Ice Cream Physical Release Jennie</div>
+                    <div class="card-detail">5 units left</div>
                 </div>
                 <div class="card">
                     <div id="photo">
-                        <img src="img_avatar.png" alt="Avatar">
+                        <img src="./assets/photocard/txt_blue_hour_kai.png" alt="Avatar">
                     </div>
-                    <div class="card-info">
-                        Photocard Name dasdadas
-                        <div class="card-detail">5 units left</div>
-                    </div>
+                    <div class="card-title">Blue Hour Version 01 Hueningkai</div>
+                    <div class="card-detail">3 units left</div>
                 </div>
             </div>
         </div>
@@ -252,11 +242,33 @@
             <div class="photocards">
                 <div class="card">
                     <div id="photo">
-                        <img src="img_avatar.png" alt="Avatar">
+                        <img src="./assets/photocard/twice_alchool_free_nayeon.png" alt="Avatar">
                     </div>
-                    <div class="card-info">
-                        Photocard Name dasdadas
+                    <div class="card-title">Taste of Love Version 03 Nayeon</div>
+                </div>
+                <div class="card">
+                    <div id="photo">
+                        <img src="./assets/photocard/attacca_the_8.png" alt="Avatar">
                     </div>
+                    <div class="card-title">Attacca 9th Mini Album Op 1 The8</div>
+                </div>
+                <div class="card">
+                    <div id="photo">
+                        <img src="./assets/photocard/attacca_the_8.png" alt="Avatar">
+                    </div>
+                    <div class="card-title">Attacca 9th Mini Album Op 1 The8</div>
+                </div>
+                <div class="card">
+                    <div id="photo">
+                        <img src="./assets/photocard/attacca_the_8.png" alt="Avatar">
+                    </div>
+                    <div class="card-title">Attacca 9th Mini Album Op 1 The8</div>
+                </div>
+                <div class="card">
+                    <div id="photo">
+                        <img src="./assets/photocard/attacca_the_8.png" alt="Avatar">
+                    </div>
+                    <div class="card-title">Attacca 9th Mini Album Op 1 The8</div>
                 </div>
             </div>
         </div>
@@ -293,6 +305,7 @@
             showSlides(slideIndex = n);
         }
 
+        // Interective slideshow
         function showSlides(n) {
             let i;
             let slides = document.getElementsByClassName("slide");
@@ -315,16 +328,17 @@
             setTimeout(autoSlide, 5000);
         }
 
-        autoSlide(); // Start automatic slideshow
+        autoSlide();
 
         const carrousel = document.querySelector('.carrousel');
         const artistCards = document.querySelectorAll('.artist-card');
         const prevButton = document.querySelector('.arrow-back-ios-new');
         const nextButton = document.querySelector('.arrow-forward-ios');
 
-        const cardsPerPage = 5;
+        const cardsPerPage = 4;
         let currentPage = 0;
 
+        // Carousel of artists
         function updateCarousel() {
             const startIndex = currentPage * cardsPerPage;
             const endIndex = startIndex + cardsPerPage;
@@ -362,7 +376,6 @@
             moveCarousel(1);
         });
 
-        // Initial update
         updateCarousel();
 
     </script>
