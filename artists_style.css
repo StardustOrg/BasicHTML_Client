@@ -18,6 +18,7 @@ body {
 
 .container {
     padding: 0 250px;
+    margin-bottom: 118px;
 }
 
 #body {
@@ -225,4 +226,53 @@ footer {
 
 .artist-card:hover .image-caption {
     opacity: 1;
+}
+
+
+.photocards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card {
+    width: 155px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+#photo,
+.card img {
+    width: 155px;
+    height: 233px;
+    border-radius: 15px;
+    background-color: #E1B4F4;
+}
+
+.card-title {
+    color: #212427;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card-detail {
+    color:  #8A94A0;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
