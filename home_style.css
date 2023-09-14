@@ -356,7 +356,7 @@ footer {
     opacity: 1;
 }
 
-.artist-card:nth-child(n + 7) {
+.artist-card:nth-child(n + 6) {
     display: none;
 }
 
@@ -367,4 +367,20 @@ footer {
 
 .carrousel-container span {
     font-size: 30px;
+}
+
+.photocards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card {
+    width: 155px;
+}
+
+#photo {
+    height: 233px;
+    border-radius: 15px;
+    background-color: #E1B4F4;
 }
