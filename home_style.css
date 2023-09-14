@@ -356,6 +356,10 @@ footer {
     opacity: 1;
 }
 
+.artist-card:nth-child(n + 7) {
+    display: none;
+}
+
 .artist-card:hover .image-caption {
     opacity: 1;
 }
