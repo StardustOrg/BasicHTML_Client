@@ -183,8 +183,8 @@ footer {
     display: flex;
     align-items: center;
     align-content: center;
-    justify-content: space-between;
-    gap: 37px;
+    justify-content: space-evenly;
+    gap: 40px;
     flex-wrap: wrap;
 }
 
@@ -254,7 +254,7 @@ footer {
 .photocards {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .card {
