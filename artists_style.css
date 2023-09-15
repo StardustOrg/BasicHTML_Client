@@ -18,7 +18,6 @@ body {
 
 .container {
     padding: 0 250px;
-    margin-bottom: 118px;
 }
 
 #body {
@@ -157,11 +156,34 @@ footer {
     font-size: 24px;
 }
 
+.cover {
+    position: relative;
+    text-align: center;
+}
+
+.cover img {
+    width: 100%;
+    height: auto;
+}
+
+.cover-caption {
+    color: #FDFDFD;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Inter;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
 .artists-container {
     display: flex;
     align-items: center;
     align-content: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     gap: 37px;
     flex-wrap: wrap;
 }
@@ -269,7 +291,7 @@ footer {
 }
 
 .card-detail {
-    color:  #8A94A0;
+    color: #8A94A0;
     font-family: Inter;
     font-size: 12px;
     font-style: normal;
