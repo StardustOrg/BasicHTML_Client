@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./assets/stardust.png">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" />
-    <link rel="stylesheet" href="home_style.css">
+    <link rel="stylesheet" href="style.css">
     <title>StardustCard - Home</title>
 </head>
 
@@ -296,89 +295,7 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        let slideIndex = 0;
-        showSlides(slideIndex);
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        // Interective slideshow
-        function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("slide");
-            let dots = document.getElementsByClassName("dot");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "flex";
-            dots[slideIndex - 1].className += " active";
-        }
-
-        // Automatic slideshow
-        function autoSlide() {
-            showSlides(slideIndex += 1);
-            setTimeout(autoSlide, 5000);
-        }
-
-        autoSlide();
-
-        const carrousel = document.querySelector('.carrousel');
-        const artistCards = document.querySelectorAll('.artist-card');
-        const prevButton = document.querySelector('.arrow-back-ios-new');
-        const nextButton = document.querySelector('.arrow-forward-ios');
-
-        const cardsPerPage = 6;
-        let currentPage = 0;
-
-        // Carousel of artists
-        function updateCarousel() {
-            const startIndex = currentPage * cardsPerPage;
-            const endIndex = startIndex + cardsPerPage;
-
-            artistCards.forEach((card, index) => {
-                if (index >= startIndex && index < endIndex) {
-                    card.style.display = 'block';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-        }
-
-        function moveCarousel(direction) {
-            currentPage += direction;
-
-            if (currentPage < 0) {
-                currentPage = 0;
-            }
-
-            const maxPage = Math.ceil(artistCards.length / cardsPerPage) - 1;
-
-            if (currentPage > maxPage) {
-                currentPage = maxPage;
-            }
-
-            updateCarousel();
-        }
-
-        prevButton.addEventListener('click', () => {
-            moveCarousel(-1);
-        });
-
-        nextButton.addEventListener('click', () => {
-            moveCarousel(1);
-        });
-
-        updateCarousel();
-
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -1,20 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="br">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" href="./assets/stardust.png">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;900&display=swap"
-            rel="stylesheet">
         <link rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded"
             />
-        <link rel="stylesheet" href="login_style.css">
-        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <title>StardustCard - Login</title>
     </head>
     <body>
         <div class="container" id="body">
@@ -27,7 +22,7 @@
                     <li><a>NEW additions</a></li>
                 </ul>
                 <div class="navbar_actions">
-                    <span class="material-symbols-rounded">
+                    <span class="material-symbols-rounded" id="searchIcon">
                         search
                     </span>
                     <span class="material-symbols-rounded">
@@ -42,10 +37,11 @@
                 <form method="post">
                     <h2>Sign in</h2>
                     <label>Email:</label>
-                    <input type="email" name="email" placeholder="Email">
+                    <input type="email" name="email" id="email"
+                        placeholder="Email" required>
                     <label>Password:</label>
-                    <input type="password" name="password"
-                        placeholder="Password">
+                    <input type="password" name="password" id="password"
+                        placeholder="Password" required>
                     <a class="text_link">Forgot password?</a>
                     <button>Sign In</button>
                 </form>
@@ -73,5 +69,6 @@
                 </div>
             </div>
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>

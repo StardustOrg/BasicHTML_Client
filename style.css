@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 body {
     margin: 0;
     min-height: 100vh;
@@ -28,7 +30,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0px;
+    padding: 10px 20px;
+    position: relative; 
 }
 
 .logo {
@@ -67,7 +70,6 @@ li a {
 
 li a:hover {
     text-decoration: underline;
-    cursor: pointer;
 }
 
 .active {
@@ -98,7 +100,58 @@ h3 {
     margin-bottom: 30px;
 }
 
+.login_form {
+    text-align: center;
+}
 
+
+form {
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 23px;
+    color: #8A94A0;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    border: 1px solid #8A94A0;
+    font-size: 16px;
+}
+
+button {
+    padding: 6px 25px;
+    justify-content: center;
+    border: 0;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    background: #8EDCE6;
+}
+
+button {
+    color: #6622CC;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 40px;
+    align-self: center;
+}
+
+button:hover {
+    background: #7fd3df;
+}
 
 .text_link {
     display: block;
@@ -148,13 +201,112 @@ footer {
 
 #footer .links:hover {
     text-decoration: underline;
-    cursor: pointer;
 }
 
 #footer .logo {
     color: #E1B4F4;
     font-size: 24px;
 }
+
+.slideshow {
+    padding-left: 250px;
+}
+
+.slideshow-container {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+.slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    width: 100%;
+}
+
+.slide_img {
+    width: 50%;
+
+}
+
+.slide_text {
+    flex: 1;
+    padding-right: 150px;
+}
+
+.slide_title {
+    color: #212427;
+    text-align: left;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 20px;
+    margin-right: 50px;
+}
+
+.slide_subtitle {
+    color: #212427;
+    text-align: left;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.slider-dots {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #6622cc85;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+#active-dot,
+.dot:hover {
+    background-color: #6622CC;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.carrousel-container {
+    padding: 10px 0px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    align-items: center;
+}
+
+.carrousel {
+    display: flex;
+    gap: 56px;
+    transition: transform 0.3s ease;
+    justify-content: space-between;
+}
+
 
 .cover {
     position: relative;
@@ -246,10 +398,17 @@ footer {
     cursor: pointer;
 }
 
+.artist-card:nth-child(n + 7) {
+    display: none;
+}
+
+#all-artists .artist-card {
+    display: block;
+}
+
 .artist-card:hover .image-caption {
     opacity: 1;
 }
-
 
 .photocards {
     display: flex;
