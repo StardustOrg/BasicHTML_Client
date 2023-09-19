@@ -30,8 +30,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    position: relative; 
+    padding: 10px 0px;
+    position: relative;
 }
 
 .logo {
@@ -456,4 +456,30 @@ footer {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.navigation_path {
+    color: #8A94A0;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.navigation_path a:hover {
+    text-decoration: underline;
+}
+
+.product {
+    display: flex;
+    flex-direction: row;
+    gap: 46px;
+}
+
+.product img {
+    border-radius: 34px;
+    background-color: #E1B4F4;
 }
