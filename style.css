@@ -5,7 +5,7 @@ body {
     min-height: 100vh;
     font-family: 'Inter', sans-serif;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
 .material-symbols-rounded {
@@ -482,4 +482,120 @@ footer {
 .product img {
     border-radius: 34px;
     background-color: #E1B4F4;
+}
+
+.product-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+
+.product-artist {
+    color: #5c5d5f;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.product-name {
+    color: #212427;
+    font-family: Inter;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.product-tags {
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+}
+
+.tag {
+    display: flex;
+    padding: 4px 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50px;
+    background: #BD7FD7;
+
+    color: #FDFDFD;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.price-tag {
+    color: #212427;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.product-stock {
+    margin: 16px 0;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.product-quantity {
+    display: inline-flex;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.25);
+}
+
+.product-quantity select {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+
+    /* text */
+    color: #212427;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.product-quantity label {
+    margin: 0;
+
+    /* text */
+    color: #212427;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.product-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }

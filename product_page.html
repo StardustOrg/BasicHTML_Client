@@ -40,7 +40,7 @@
         </div>
         <div class="product">
             <img src="assets/photocard/hanni_bunnyland.png">
-            <div class="product-details">
+            <div class="product-container">
                 <div class="product-info">
                     <div class="product-artist">NewJeans Hanni</div>
                     <div class="product-name">NewJeans Photocard 'Bunnyland' Version</div>
@@ -51,7 +51,24 @@
                         <div class="tag">Trending</div>
                     </div>
                 </div>
-                <div class="product-"></div>
+                <div class="product-details">
+                    <div class="price-tag">R$ 100,00</div>
+                    <div class="product-stock" style="color: #CC224B;">Only 4 units left</div>
+                    <div class="product-quantity">
+                        <label>Quantity:</label>
+                        <select id="quantitySelector"">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <button>Add to card</button>
+                    <button>Buy now</button>
+                </div>
             </div>
         </div>
         <div class="bundles" id="recommended"></div>
@@ -62,7 +79,7 @@
             <div class="footer-column">
                 <h3>Contact Us</h3>
                 <p>contact@stardustcard.org</p>
-                <div class="logo">StardustCard</div>
+                <div class="logo">StardustCa rd</div>
                 <p>© 2023, StardustCard</p>
             </div>
             <div class="footer-column">
@@ -79,6 +96,7 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
