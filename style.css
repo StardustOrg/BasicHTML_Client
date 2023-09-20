@@ -132,21 +132,23 @@ input[type="password"] {
 }
 
 button {
-    padding: 6px 25px;
+    display: inline-flex;
+    padding: 10px 26px;
     justify-content: center;
-    border: 0;
     align-items: center;
     gap: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     background: #8EDCE6;
+    border: 0;
 }
 
 button {
     color: #6622CC;
-    font-size: 15px;
-    font-weight: 500;
-    margin-top: 40px;
-    align-self: center;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 button:hover {
@@ -597,5 +599,33 @@ footer {
 .product-actions {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    gap: 21px;
+}
+
+.product-actions button {
+    align-self: start;
+    margin: 0;
+}
+
+.secondary-button {
+    display: inline-flex;
+    padding: 10px 36px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 10px;
+    background: #62C;
+
+    /* TEXT */
+    color: #FDFDFD;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.secondary-button:hover {
+    background: rgb(65, 10, 148);
 }
