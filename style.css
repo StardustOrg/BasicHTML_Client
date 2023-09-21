@@ -507,6 +507,7 @@ footer {
     line-height: normal;
 }
 
+#big-title,
 .product-name {
     color: #212427;
     font-family: Inter;
@@ -514,6 +515,11 @@ footer {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+#big-title {
+    margin-top: 74px;
+    margin-bottom: 56px;
 }
 
 .product-tags {
@@ -537,6 +543,10 @@ footer {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+}
+
+.tag:hover {
+    background: #843fa1;
 }
 
 .price-tag {
@@ -628,4 +638,24 @@ footer {
 
 .secondary-button:hover {
     background: rgb(65, 10, 148);
+}
+
+.cart-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cart-products-cont {
+    width: 44%;
+}
+
+.cart-total {
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 10px 2px rgba(103, 103, 103, 0.20);
+    padding: 50px 40px;
 }
