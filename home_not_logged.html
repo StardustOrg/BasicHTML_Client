@@ -15,21 +15,38 @@
         <div class="navbar">
             <div class="logo">StardustCard</div>
             <ul class="navbar_pages">
-                <li><a class="active" href="home_not_logged.html">Home</a></li>
+                <li><a href="home_not_logged.html">Home</a></li>
                 <li><a href="artists_page.html">Artists</a></li>
                 <li><a>Trending</a></li>
                 <li><a>New additions</a></li>
             </ul>
             <div class="navbar_actions">
-                <span class="material-symbols-rounded">
-                    search
-                </span>
-                <span class="material-symbols-rounded">
-                    shopping_cart
-                </span>
-                <span class="material-symbols-rounded">
-                    person
-                </span>
+                <div id="search">
+                    <span class="material-symbols-rounded">
+                        search
+                    </span>
+                </div>
+                <div id="cart">
+                    <a href="cart_page.html">
+                        <span class="material-symbols-rounded">
+                            shopping_cart
+                        </span>
+                    </a>
+                </div>
+                <div class="dropdown-account not-logged">
+                    <span class="material-symbols-rounded">
+                        person
+                    </span>
+                    <div class="dropdown-content">
+                        <a href="login.html">
+                            <button>Sign in</button>
+                        </a>
+                        <div class="new-account-div">
+                            <p>New here?</p>
+                            <a href="register.html">Create Account</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

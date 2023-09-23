@@ -55,18 +55,90 @@ body {
 }
 
 
-#account:hover .dropdown-content {
+.dropdown-account:hover .dropdown-content {
     display: flex;
     flex-direction: column;
 }
 
-.dropdown-content {
+.dropdown-account:hover span {
+    color: #7fd3df;
+}
+
+.dropdown-content button {
+    margin-top: 0;
+}
+
+.not-logged .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    min-width: 120px;
     z-index: 1;
+    padding: 29px 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 19px;
+
+    border-radius: 10px;
+    background: #FDFDFD;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.new-account-div {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    align-items: center;
+}
+
+.logged .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 120px;
+    z-index: 1;
+    padding: 29px 30px;
+    flex-direction: column;
+    align-items: left;
+    gap: 19px;
+
+    border-radius: 10px;
+    background: #FDFDFD;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.not-logged.dropdown-account p {
+    margin: 0;
+
+    color: #8A94A0;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.dropdown-account a {
+    color: #62C;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.not-logged .dropdown-content {
+    text-align: center;
+}
+
+.dropdown-account a:hover {
+    text-decoration: underline;
+}
+
+.logged .dropdown-content {
+    text-align: left;
+}
+
+.logged .logout {
+    color: #8A94A0;
 }
 
 ul {
@@ -120,7 +192,8 @@ h3 {
     margin-bottom: 30px;
 }
 
-.login_form {
+.login_form,
+.register_form {
     text-align: center;
 }
 
@@ -145,7 +218,8 @@ label {
 }
 
 input[type="email"],
-input[type="password"] {
+input[type="password"],
+input[type="text"] {
     padding: 10px;
     border: 1px solid #8A94A0;
     font-size: 16px;
@@ -160,6 +234,7 @@ button {
     border-radius: 10px;
     background: #8EDCE6;
     border: 0;
+    margin-top: 40px;
 }
 
 button {
@@ -190,6 +265,53 @@ button:hover {
 .text_link:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+.divider {
+    width: 60px;
+    height: 1.2px;
+    background-color: #D2D1D1;
+    border-radius: 5px;
+}
+
+.secondary-message {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2px;
+}
+
+.secondary-action {
+    max-width: 300px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.secondary-action button {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #D9D9D9;
+    background: #FDFDFD;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.25);
+
+    /* text */
+    color: #000;
+}
+
+.secondary-action button:hover {
+    background: #ececec;
+}
+
+.secondary-message {
+    color: #898989;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
 #footer {
