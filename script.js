@@ -83,3 +83,54 @@ nextButton.addEventListener("click", () => {
 });
 
 updateCarousel();
+
+function validateTextField(value) {
+  if (value == null) {
+    alert("O elemento não existe");
+    return false;
+  }
+  /* testa se o valor é vazio ou formado por apenas espaços em branco */
+  if (value == null || value.length == 0 || (/^\s+$/.test(value))) {
+    return false;
+  }
+  return true;
+}
+
+function validateEmail(email) {
+  var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+  return emailRegex.test(email);
+}
+
+function validateTextFieldLength(value) {
+  return value.length >= 6;
+}
+
+function validateRegisterForm() {
+  var name = document.getElementById('name').value;
+  var address = document.getElementById('address').value;
+  var email = document.getElementById('email').value;
+  var login = document.getElementById('login').value;
+  var password = document.getElementById('password').value;
+  var confirmPassword = document.getElementById('confirm-password').value;
+
+  if (!validateTextField(name)) {
+    alert('Please enter your name.');
+    return false;
+  } else if (!validateTextField(address)) {
+    alert('Please enter your address.');
+    return false;
+  } else if (!validateEmail(email)) {
+    alert('Please enter a valid email address.');
+    return false;
+  } else if (!validateTextFieldLength(login)) {
+    alert('Login must be at least 6 characters.');
+    return false;
+  } else if (!validateTextFieldLength(password)) {
+    alert('Password must be at least 6 characters.');
+    return false;
+  } else if (!(password === confirmPassword)) {
+    alert('Passwords do not match.');
+    return false;
+  }
+  return true;
+}
