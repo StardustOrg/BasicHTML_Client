@@ -9,7 +9,7 @@ Este repositório contém os arquivos HTML das telas do projeto destinadas à pa
 ### Git Clone
 
 ```bash
-git clone https://github.com/StardustOrg/BasicHTML_Clien.git
+git clone https://github.com/StardustOrg/BasicHTML_Client.git
 ```
 
 ### Acessar o HTML
