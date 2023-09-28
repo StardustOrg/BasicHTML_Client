@@ -2,7 +2,7 @@
 
 Este repositório contém os arquivos HTML das telas do projeto destinadas à parte cliente do projeto `StardustCard`.
 
-![image](https://github.com/StardustOrg/BasicHTML_Client/assets/86852231/64e0cb40-3b48-4f21-b217-a1b18f2bb5ad)
+![image](./assets/StardustClient.png)
 
 ## Como Usar
 
