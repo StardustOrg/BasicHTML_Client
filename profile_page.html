@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./assets/stardust.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" />
+    <link rel="stylesheet" href="style.css">
+    <title>StardustCard - Profile</title>
+</head>
+
+<body>
+    <div class="container" id="body">
+        <div class="navbar">
+            <div class="logo">StardustCard</div>
+            <ul class="navbar_pages">
+                <li><a href="home_not_logged.html">Home</a></li>
+                <li><a href="artists_page.html">Artists</a></li>
+                <li><a>Trending</a></li>
+                <li><a>New additions</a></li>
+            </ul>
+            <div class="navbar_actions">
+                <div id="search">
+                    <span class="material-symbols-rounded">
+                        search
+                    </span>
+                </div>
+                <div id="cart">
+                    <a href="cart_page.html">
+                        <span class="material-symbols-rounded">
+                            shopping_cart
+                        </span>
+                    </a>
+                </div>
+                <div class="dropdown-account not-logged">
+                    <span class="material-symbols-rounded">
+                        person
+                    </span>
+                    <div class="dropdown-content">
+                        <a href="login.html">
+                            <button>Sign in</button>
+                        </a>
+                        <div class="new-account-div">
+                            <p>New here?</p>
+                            <a href="register.html">Create Account</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="profile-heading">My Profile</h2>
+        <div class="profile-container">
+            <div class="profile-options-cont">
+                <a>
+                    <div class="selected profile-option">
+                        <span class="material-symbols-rounded">
+                            account_circle
+                        </span>
+                        My Details
+                    </div>
+                </a>
+                <a>
+                    <div class="profile-option">
+                        <span class="material-symbols-rounded">
+                            orders
+                        </span>
+                        My Orders
+                    </div>
+                </a>
+            </div>
+            <div class="profile-info-cont">
+                <h3>Your information</h3>
+                <div class="info-row">
+                    <div class="info-subt">
+                        <p>This is your personal information. If you want to update, change the specific value and the
+                            save it.</p>
+                            <a id="delete-account">DELETE ACCOUNT</a>
+                    </div>
+                    <div class="details-form">
+                        <form method="post">
+                            <label>Your Name:</label>
+                            <input type="text" name="name" id="name" placeholder="First and last name" value="substituir" required>
+                            <label>Address:</label>
+                            <input type="text" name="address" id="address" placeholder="Your address" value="substituir" required>
+                            <label>Email:</label>
+                            <input type="email" name="email" id="email" placeholder="Your email" value="substituir" required>
+                            <button>Save</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container" id="footer">
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p>contact@stardustcard.com</p>
+                <div class="logo">StardustCard</div>
+                <p>© 2023, StardustCard</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick links</h3>
+                <p class="links">Terms of Service</p>
+                <p class="links">Privacy Policy</p>
+                <p class="links">Refund Policy</p>
+            </div>
+            <div class="footer-column">
+                <h3>Our mission</h3>
+                <p>We offer only the best and highest quality products of
+                    your favorite idols.</p>
+                <p>A touch of Stardust</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
